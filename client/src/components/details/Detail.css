@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:600');
+
+.wrapper input:active, input:focus {
+  outline: none;
+}
+.wrapper input, textarea{
+    width: 100%;
+    padding: 10px;
+    background: #ececec;
+    color: #333;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    margin: 3px 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    /* width:350px; */
+    max-width: 100%;  
+    /* border: 1px solid #6a2096; */
+
+}
+.btn-form{
+    background-color: #6a2096;
+    color: #ececec;
+}
+
+/* .wrapper textarea{
+    border: 1px solid #6a2096;
+    color: #9C9C9C;
+    padding:10px 25px;
+    background: transparent;
+    margin-bottom: 20px;  
+    border-radius: 20px;
+    font-weight: 300;
+    font-size: 14px;
+    
+    
+} */
+.wrapper ul{
+    list-style: none;
+    padding: 0
+}
+
+.wrapper ul li{
+    /* display: inline-block; */
+    padding-right: 10px;     
+}
+
+
+.wrapper{
+    margin: 0px 0;
+
+}
+
+.wrapper .form{
+    display: flex;
+    /* text-align: center; */
+    /* justify-content: center;  */
+}
+
+ .left-col{
+    width: 40%;
+    padding: 1px 30px 0 30px;
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #40a99e 0%, #80D0C7 100%);
+
+    /* background-image: radial-gradient( circle 732px at -23.9% -25.1%,  rgba(30,39,107,1) 6.1%, rgb(155, 75, 230) 100.2% ); */
+    /* background-image: url('../../images/back.jpg'); */
+    background-size: cover;
+    
+
+    /* background: linear-gradient(to bottom, #69B9C4, #91C8EB); */
+/* border:1px solid #6a2096; */
+border-radius: 10px;
+}
+
+.left-col h2{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #33364D;
+}
+
+.right-col{
+    width: 60%;
+    padding: 5px 30px 30px 30px;    
+    /* background: rgba(255, 255, 255, 0.7); */
+  
+}
+
+.right-col h3{
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #33364D;  
+    background-image:  linear-gradient(
+        160deg
+        , #40a99e 0%, #80D0C7 100%);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        background-clip: text;
+/* text-fill-color: transparent  */
+}
+
+.btn-del{
+    align-items: flex-end;
+    max-width: 100px;
+    
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+
+    background-color: #33364D;
+}
+.right-col .text-primary{
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 10px;
+    color: #33364D;   
+}
+
+
+.right-col .btn-edit{
+    align-items: flex-end;
+    max-width: 100px;
+    background: linear-gradient(160deg, #40a99e 0%, #80D0C7 100%);
+    
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.5s;
+}
+.right-col .btn-edit:hover{
+    background: linear-gradient(160deg, #80D0C7, 0%, #40a99e 100%);
+}
+
+.search-icon{
+    font-family:Arial, FontAwesome
+}
+@media screen and (max-width: 789px) {
+    .wrapper .form{
+        display: block;
+    }
+    .left-col img.img1{
+        display: none
+    }
+
+    .right-col, .left-col{
+        width:100%;
+        padding: 40px 30px 40px;
+    }
+
+}
+
+@media(min-width:790px){
+    .wrapper .form{
+        /* position:fixed; */
+    }
+    .form-list{
+        margin-top: 10px;
+
+        height:28rem;
+        overflow-y: scroll;
+    }
+    .form-list::-webkit-scrollbar {
+        width: 8px;
+        height: 6px;
+    }
+    .form-list::-webkit-scrollbar-thumb {
+
+        border-radius: 10px;
+        background: rgba(0,0,0,.3);
+    }
+    .form-list::-webkit-scrollbar-track {
+
+        -webkit-box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+        border-radius: 10px;
+        display: none;
+    }
+}
+.badge-primaryy{
+    color:#33364D
+  }
